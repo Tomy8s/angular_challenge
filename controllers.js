@@ -1,4 +1,4 @@
-toDoApp.controller('ToDoController', function() {
+toDoApp.controller('ToDoController', ['ToDoFactory', function(ToDoFactory) {
 
   var self = this;
 
@@ -11,11 +11,14 @@ toDoApp.controller('ToDoController', function() {
   ];
 
   self.addToDo = function(task) {
-    var newTask = {task: task, completed: false};
-    self.todos.push(newTask);
+    self.todos.push(new ToDoFactory(task));
   };
 
-  self.deleteToDo = function(task) {
-    self.todos.splice(task, 1);
+  self.deleteToDo = function(index) {
+    self.todos.splice(index, 1);    
   };
-});
+
+  self.complete = function(index) {
+    self.todos[index];
+  };
+}]);
