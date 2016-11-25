@@ -13,7 +13,8 @@
       <input type="text" ng-model="newTask">
       <button type="button" ng-click="ctrl.addToDo(newTask)">Add a TomDo</button>
       <p ng-repeat="todo in ctrl.todos">
-        {{ todo.task }}: {{todo.completed ? "" : "not "}}completed
+        {{ todo.text }}: {{todo.completed ? "" : "not "}}completed
+        <span ng-click="todo.complete()">Complete</span>
         <a href="" ng-click="ctrl.deleteToDo($index)">Delete</a>
       </p>
     </div>
