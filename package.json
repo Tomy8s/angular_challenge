@@ -1,0 +1,25 @@
+{
+  "name": "angular_challenge",
+  "version": "1.0.0",
+  "description": "Makers Angular Challenge",
+  "main": "app/app.js",
+  "dependencies": {
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomy8s/angular_challenge.git"
+  },
+  "author": "Tom & Tom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomy8s/angular_challenge/issues"
+  },
+  "homepage": "https://github.com/Tomy8s/angular_challenge#readme"
+}
