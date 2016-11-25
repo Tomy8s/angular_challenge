@@ -1,8 +1,8 @@
 toDoApp.factory('ToDoFactory', function() {
 
-    var Todo = function(toDoText) {
+    var Todo = function(toDoText, toDoCompleted = false) {
       this.text = toDoText;
-      this.completed = false;
+      this.completed = toDoCompleted;
     }
 
     Todo.prototype.complete = function () {
